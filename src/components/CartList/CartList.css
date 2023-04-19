@@ -1,0 +1,38 @@
+.cart__list{
+    max-width: 88%;
+    margin: auto;
+}
+.product__image img {
+    max-width: 200px;
+}
+strong{
+    font-size: 24px;
+    color: red;
+}
+.product__info{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+.product__description{
+    max-width: 40%;
+}
+.remove__btn{
+    height: 30px;
+    width: 100px;
+    background: tomato;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+}
+.quantity__button{
+    width: 30px;
+    height: 30px;
+    margin: 30px;
+}
+.product__quantity{
+    text-align: center;
+}

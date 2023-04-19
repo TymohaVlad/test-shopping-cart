@@ -1,0 +1,36 @@
+.product__card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: end;
+    grid-row-gap: 20px;
+}
+.card__content{
+    max-width: 300px;
+}
+.product__image{
+    width: 200px;
+}
+.product__price{
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+.add__btn{
+    background: green;
+    width: 200px;
+    height: 30px;
+    color: aliceblue;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.description__btn{
+   display: inline-block;
+    width: 190px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(167, 114, 45);
+    padding: 5px;
+    color: #fff;
+    font-size: 18px;
+}
