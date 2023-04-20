@@ -1,3 +1,4 @@
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ApiClient from '../../components/ApiClient';
@@ -27,7 +28,7 @@ const DescriptionPage = () => {
   }, [apiClient, productId]);
 
   if (error) {
-    return <span className="error__text">Error: {error}</span>;
+    return <span className='error__text'>Error: {error}</span>;
   }
 
   if (!product) {
@@ -35,11 +36,11 @@ const DescriptionPage = () => {
   }
 
   return (
-    <article className="product__desctiption">
-      <div className="card">
-        <img className="product__image" src={product.image} alt="" />
-        <h3 className="product__title">{product.title}</h3>
-        <p className="product__description">{product.description}</p>
+    <article className='product__desctiption'>
+      <div className='card'>
+        <img className='product__image' src={product.image} alt='' />
+        <h3 className='product__title'>{product.title}</h3>
+        <p className='product__description'>{product.description}</p>
       </div>
     </article>
   );

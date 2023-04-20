@@ -30,13 +30,8 @@ const shoppingCartSlice = createSlice({
   name: 'shopping-cart',
   initialState: initialState(),
   reducers: {
-    addItem: (
-      state: Draft<ShoppingCart>,
-      action: PayloadAction<ShoppingCartItem>
-    ) => {
-      const existingItem = state.items.find(
-        (item) => item.id === action.payload.id
-      );
+    addItem: (state: Draft<ShoppingCart>, action: PayloadAction<ShoppingCartItem>) => {
+      const existingItem = state.items.find((item) => item.id === action.payload.id);
       if (existingItem) {
         existingItem.quantity++;
       } else {
@@ -50,11 +45,9 @@ const shoppingCartSlice = createSlice({
     },
     updateItemQuantity: (
       state: ShoppingCart,
-      action: PayloadAction<{ id: number; quantity: number }>
+      action: PayloadAction<{ id: number; quantity: number }>,
     ) => {
-      const existingItem = state.items.find(
-        (item) => item.id === action.payload.id
-      );
+      const existingItem = state.items.find((item) => item.id === action.payload.id);
       if (existingItem) {
         existingItem.quantity = action.payload.quantity;
         const itemsToSave = state.items.map((item) => ({
@@ -67,8 +60,7 @@ const shoppingCartSlice = createSlice({
   },
 });
 
-export const { addItem, removeItem, updateItemQuantity } =
-  shoppingCartSlice.actions;
+export const { addItem, removeItem, updateItemQuantity } = shoppingCartSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
 export const shoppingCartSelector = (state: RootState) => state;

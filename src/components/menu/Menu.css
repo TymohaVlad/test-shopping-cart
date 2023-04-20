@@ -1,25 +1,25 @@
-.navigation__menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 3%;
+.navigation__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3%;
 }
-.navigation__links{
-    display: flex;
-    align-items: center;
+.navigation__links {
+  display: flex;
+  align-items: center;
 }
-.page__link{
-    color: #000
+.page__link {
+  color: #000;
 }
-.widget__cart{
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
+.widget__cart {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
 }
-.count-items__cart{
-    background-color: red;
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    width: 30px;
+.count-items__cart {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  width: 30px;
 }
